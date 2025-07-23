@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golf Membership Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">GolfMarket</div>
+      <ul class="nav-links">
+        <li><a href="#listings">Memberships</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#cta">Get Started</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="#register" class="btn-primary">Register</a>
+        <a href="#login" class="btn-secondary">Login</a>
+      </div>
+    </nav>
+  </header>
+  <!-- Registration Modal Placeholder (MVP) -->
+  <div id="register" class="modal" style="display:none;">
+    <!-- Registration form and identity verification would go here -->
+    <div class="modal-content">
+      <h2>Member Registration</h2>
+      <p>[Registration form with identity verification and admin approval]</p>
+      <span class="modal-label">MVP: Registration/Identity Verification</span>
+      <button class="btn-secondary" onclick="closeModal('register')">Close</button>
+    </div>
+  </div>
+  <!-- Login Modal Placeholder (MVP) -->
+  <div id="login" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Login</h2>
+      <p>[Login form]</p>
+      <span class="modal-label">MVP: Login</span>
+      <button class="btn-secondary" onclick="closeModal('login')">Close</button>
+    </div>
+  </div>
+  <section class="hero">
+    <h1>Buy & Sell Golf Club Memberships</h1>
+    <p>The trusted marketplace for golf enthusiasts, sellers, and golf courses.</p>
+    <a href="#cta" class="btn-primary">Get Started</a>
+  </section>
+  <section class="who-for">
+    <h2>Who is this for?</h2>
+    <p>
+      This platform is designed for golf enthusiasts—mainly males in their 20s–50s—who want to buy, sell, or discover golf club memberships. Whether you’re an individual seller, a buyer, or a golf course looking to recruit new members, GolfMarket is your trusted marketplace.
+    </p>
+    <ul class="usage-scenarios">
+      <li>Individuals selling unneeded memberships</li>
+      <li>Buyers seeking new memberships</li>
+      <li>Golf courses officially listing and recruiting new members</li>
+      <li>Anyone looking for information on joining a specific golf club</li>
+    </ul>
+  </section>
+  <section class="product-info">
+    <h2>Membership Types & Price Ranges</h2>
+    <p>
+      We specialize in <strong>regular golf club memberships (individual name memberships)</strong> from courses all across Japan.<br>
+      <strong>Typical price range:</strong> ¥500,000 – ¥3,000,000<br>
+      <strong>Premium memberships:</strong> ¥5,000,000 – ¥10,000,000+
+    </p>
+  </section>
+  <section id="listings" class="listings-section">
+    <h2>Available Memberships</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="for-sale" title="Product list/search/details page">For Sale</button>
+      <button class="tab-btn" data-tab="wanted" title="Product list/search/details page">Wanted</button>
+      <button class="tab-btn" data-tab="official" title="Product list/search/details page">Official</button>
+    </div>
+    <div class="tab-content for-sale active">
+      <div class="membership-table">
+        <div class="membership-row header">
+          <div>Club Name</div>
+          <div>Location</div>
+          <div>Type</div>
+          <div>Price</div>
+          <div>Seller</div>
+          <div></div>
+        </div>
+        <div class="membership-row">
+          <div>Maple Leaf Golf Club</div>
+          <div>Hokkaido</div>
+          <div>Regular</div>
+          <div>¥550,000</div>
+          <div>User101</div>
+          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+        </div>
+        <div class="membership-row">
+          <div>Green Valley Golf Club</div>
+          <div>Tokyo</div>
+          <div>Regular</div>
+          <div>¥1,200,000</div>
+          <div>User123</div>
+          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+        </div>
+        <div class="membership-row">
+          <div>Sunrise Hills</div>
+          <div>Osaka</div>
+          <div>Regular</div>
+          <div>¥2,800,000</div>
+          <div>User456</div>
+          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+        </div>
+        <div class="membership-row premium">
+          <div>Imperial Golf Resort <span class="premium-badge">Premium</span></div>
+          <div>Kanagawa</div>
+          <div>Regular</div>
+          <div>¥8,500,000</div>
+          <div>User888</div>
+          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+        </div>
+      </div>
+      <button class="btn-primary" style="margin-top:2rem;" onclick="openModal('listing-form')" title="Listing registration form (MVP)">+ List a Membership</button>
+    </div>
+    <div class="tab-content wanted">
+      <div class="membership-table">
+        <div class="membership-row header">
+          <div>Looking For</div>
+          <div>Location</div>
+          <div>Type</div>
+          <div>Budget</div>
+          <div>Buyer</div>
+          <div></div>
+        </div>
+        <div class="membership-row">
+          <div>Sakura Golf Club</div>
+          <div>Chiba</div>
+          <div>Regular</div>
+          <div>¥800,000</div>
+          <div>User789</div>
+          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Offer Membership</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content official">
+      <div class="membership-table">
+        <div class="membership-row header">
+          <div>Club Name</div>
+          <div>Location</div>
+          <div>Type</div>
+          <div>Details</div>
+          <div></div>
+        </div>
+        <div class="membership-row official">
+          <div>Royal Links Golf Course</div>
+          <div>Kyoto</div>
+          <div>Official</div>
+          <div>New Memberships Available</div>
+          <div><a href="#cta" class="btn-secondary" title="Purchase application (MVP)">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Listing Registration Modal Placeholder (MVP) -->
+  <div id="listing-form" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>List a Membership</h2>
+      <p>[Listing registration form with admin screening]</p>
+      <span class="modal-label">MVP: Listing Registration</span>
+      <button class="btn-secondary" onclick="closeModal('listing-form')">Close</button>
+    </div>
+  </div>
+  <!-- Messaging Modal Placeholder (MVP) -->
+  <div id="message" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Message</h2>
+      <p>[Message function for negotiation/questions]</p>
+      <span class="modal-label">MVP: Messaging</span>
+      <button class="btn-secondary" onclick="closeModal('message')">Close</button>
+    </div>
+  </div>
+  <!-- Admin Approval/Notification Placeholder (MVP) -->
+  <div id="admin" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Admin Dashboard</h2>
+      <p>[Admin list/approval and notification functions]</p>
+      <span class="modal-label">MVP: Admin Approval/Notification</span>
+      <button class="btn-secondary" onclick="closeModal('admin')">Close</button>
+    </div>
+  </div>
+  <section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <span class="step-number">1</span>
+        <h4>Browse Memberships</h4>
+        <p>Find the perfect golf club membership for you, or list your own for sale.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <h4>Connect</h4>
+        <p>Contact sellers, buyers, or golf courses directly through our platform.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <h4>Complete the Deal</h4>
+        <p>Finalize your membership transfer or application securely and easily.</p>
+      </div>
+    </div>
+  </section>
+  <section id="cta" class="cta-section">
+    <h2>Ready to Get Started?</h2>
+    <div class="cta-buttons">
+      <a href="#" class="btn-primary">Sell a Membership</a>
+      <a href="#" class="btn-primary">Buy a Membership</a>
+      <a href="#" class="btn-primary">List as Golf Course</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 GolfMarket. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+// Simple modal open/close logic for placeholders
+function openModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+</script>
+</body>
+</html> 
