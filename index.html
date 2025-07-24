@@ -9,149 +9,148 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">GolfMarket</div>
+      <div class="logo">ゴルフマーケット</div>
       <ul class="nav-links">
-        <li><a href="#listings">Memberships</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#cta">Get Started</a></li>
+        <li><a href="#listings">会員権一覧</a></li>
+        <li><a href="#how-it-works">ご利用方法</a></li>
+        <li><a href="#cta">はじめる</a></li>
       </ul>
       <div class="auth-buttons">
-        <a href="#register" class="btn-primary">Register</a>
-        <a href="#login" class="btn-secondary">Login</a>
+        <a href="#register" class="btn-primary">新規登録</a>
+        <a href="#login" class="btn-secondary">ログイン</a>
       </div>
     </nav>
   </header>
   <!-- Registration Modal Placeholder (MVP) -->
   <div id="register" class="modal" style="display:none;">
-    <!-- Registration form and identity verification would go here -->
     <div class="modal-content">
-      <h2>Member Registration</h2>
-      <p>[Registration form with identity verification and admin approval]</p>
-      <span class="modal-label">MVP: Registration/Identity Verification</span>
-      <button class="btn-secondary" onclick="closeModal('register')">Close</button>
+      <h2>会員登録</h2>
+      <p>[本人確認付きの会員登録フォーム（管理者承認制）]</p>
+      <span class="modal-label">MVP: 会員登録・本人確認</span>
+      <button class="btn-secondary" onclick="closeModal('register')">閉じる</button>
     </div>
   </div>
   <!-- Login Modal Placeholder (MVP) -->
   <div id="login" class="modal" style="display:none;">
     <div class="modal-content">
-      <h2>Login</h2>
-      <p>[Login form]</p>
-      <span class="modal-label">MVP: Login</span>
-      <button class="btn-secondary" onclick="closeModal('login')">Close</button>
+      <h2>ログイン</h2>
+      <p>[ログインフォーム]</p>
+      <span class="modal-label">MVP: ログイン</span>
+      <button class="btn-secondary" onclick="closeModal('login')">閉じる</button>
     </div>
   </div>
   <section class="hero">
-    <h1>Buy & Sell Golf Club Memberships</h1>
-    <p>The trusted marketplace for golf enthusiasts, sellers, and golf courses.</p>
-    <a href="#cta" class="btn-primary">Get Started</a>
+    <h1>ゴルフ会員権の売買・情報サイト</h1>
+    <p>ゴルフ愛好家・売り手・ゴルフ場のための信頼できるマーケットプレイス</p>
+    <a href="#cta" class="btn-primary">今すぐはじめる</a>
   </section>
   <section class="who-for">
-    <h2>Who is this for?</h2>
+    <h2>対象ユーザー</h2>
     <p>
-      This platform is designed for golf enthusiasts—mainly males in their 20s–50s—who want to buy, sell, or discover golf club memberships. Whether you’re an individual seller, a buyer, or a golf course looking to recruit new members, GolfMarket is your trusted marketplace.
+      本サイトは、ゴルフ会員権の売買・情報収集をしたい20代～50代男性を中心としたゴルフ愛好家の方々向けです。個人売買、購入希望、ゴルフ場の公式募集など、幅広くご利用いただけます。
     </p>
     <ul class="usage-scenarios">
-      <li>Individuals selling unneeded memberships</li>
-      <li>Buyers seeking new memberships</li>
-      <li>Golf courses officially listing and recruiting new members</li>
-      <li>Anyone looking for information on joining a specific golf club</li>
+      <li>不要な会員権を売りたい個人</li>
+      <li>新しい会員権を探している購入希望者</li>
+      <li>公式に新規会員を募集したいゴルフ場</li>
+      <li>特定ゴルフクラブの入会情報を探している方</li>
     </ul>
   </section>
   <section class="product-info">
-    <h2>Membership Types & Price Ranges</h2>
+    <h2>取扱会員権と価格帯</h2>
     <p>
-      We specialize in <strong>regular golf club memberships (individual name memberships)</strong> from courses all across Japan.<br>
-      <strong>Typical price range:</strong> ¥500,000 – ¥3,000,000<br>
-      <strong>Premium memberships:</strong> ¥5,000,000 – ¥10,000,000+
+      日本全国の<strong>正会員権（個人名義）</strong>を中心に取り扱っています。<br>
+      <strong>主な価格帯：</strong>50万円～300万円<br>
+      <strong>プレミアム会員権：</strong>500万円～1,000万円以上
     </p>
   </section>
   <section id="listings" class="listings-section">
-    <h2>Available Memberships</h2>
+    <h2>会員権一覧</h2>
     <div class="tabs">
-      <button class="tab-btn active" data-tab="for-sale" title="Product list/search/details page">For Sale</button>
-      <button class="tab-btn" data-tab="wanted" title="Product list/search/details page">Wanted</button>
-      <button class="tab-btn" data-tab="official" title="Product list/search/details page">Official</button>
+      <button class="tab-btn active" data-tab="for-sale" title="会員権一覧・検索・詳細ページ">売り出し中</button>
+      <button class="tab-btn" data-tab="wanted" title="会員権一覧・検索・詳細ページ">購入希望</button>
+      <button class="tab-btn" data-tab="official" title="会員権一覧・検索・詳細ページ">公式募集</button>
     </div>
     <div class="tab-content for-sale active">
       <div class="membership-table">
         <div class="membership-row header">
-          <div>Club Name</div>
-          <div>Location</div>
-          <div>Type</div>
-          <div>Price</div>
-          <div>Seller</div>
+          <div>ゴルフ場名</div>
+          <div>エリア</div>
+          <div>種別</div>
+          <div>価格</div>
+          <div>売主</div>
           <div></div>
         </div>
         <div class="membership-row">
-          <div>Maple Leaf Golf Club</div>
-          <div>Hokkaido</div>
-          <div>Regular</div>
+          <div>メープルリーフゴルフクラブ</div>
+          <div>北海道</div>
+          <div>正会員</div>
           <div>¥550,000</div>
-          <div>User101</div>
-          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+          <div>ユーザー101</div>
+          <div><a href="#message" class="btn-secondary" title="メッセージ機能 (MVP)">出品者に連絡</a></div>
         </div>
         <div class="membership-row">
-          <div>Green Valley Golf Club</div>
-          <div>Tokyo</div>
-          <div>Regular</div>
+          <div>グリーンバレーゴルフクラブ</div>
+          <div>東京</div>
+          <div>正会員</div>
           <div>¥1,200,000</div>
-          <div>User123</div>
-          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+          <div>ユーザー123</div>
+          <div><a href="#message" class="btn-secondary" title="メッセージ機能 (MVP)">出品者に連絡</a></div>
         </div>
         <div class="membership-row">
-          <div>Sunrise Hills</div>
-          <div>Osaka</div>
-          <div>Regular</div>
+          <div>サンライズヒルズ</div>
+          <div>大阪</div>
+          <div>正会員</div>
           <div>¥2,800,000</div>
-          <div>User456</div>
-          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+          <div>ユーザー456</div>
+          <div><a href="#message" class="btn-secondary" title="メッセージ機能 (MVP)">出品者に連絡</a></div>
         </div>
         <div class="membership-row premium">
-          <div>Imperial Golf Resort <span class="premium-badge">Premium</span></div>
-          <div>Kanagawa</div>
-          <div>Regular</div>
+          <div>インペリアルゴルフリゾート <span class="premium-badge">プレミアム</span></div>
+          <div>神奈川</div>
+          <div>正会員</div>
           <div>¥8,500,000</div>
-          <div>User888</div>
-          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Contact Seller</a></div>
+          <div>ユーザー888</div>
+          <div><a href="#message" class="btn-secondary" title="メッセージ機能 (MVP)">出品者に連絡</a></div>
         </div>
       </div>
-      <button class="btn-primary" style="margin-top:2rem;" onclick="openModal('listing-form')" title="Listing registration form (MVP)">+ List a Membership</button>
+      <button class="btn-primary" style="margin-top:2rem;" onclick="openModal('listing-form')" title="会員権登録フォーム (MVP)">+ 会員権を出品</button>
     </div>
     <div class="tab-content wanted">
       <div class="membership-table">
         <div class="membership-row header">
-          <div>Looking For</div>
-          <div>Location</div>
-          <div>Type</div>
-          <div>Budget</div>
-          <div>Buyer</div>
+          <div>希望ゴルフ場</div>
+          <div>エリア</div>
+          <div>種別</div>
+          <div>予算</div>
+          <div>購入者</div>
           <div></div>
         </div>
         <div class="membership-row">
-          <div>Sakura Golf Club</div>
-          <div>Chiba</div>
-          <div>Regular</div>
+          <div>さくらゴルフクラブ</div>
+          <div>千葉</div>
+          <div>正会員</div>
           <div>¥800,000</div>
-          <div>User789</div>
-          <div><a href="#message" class="btn-secondary" title="Message function (MVP)">Offer Membership</a></div>
+          <div>ユーザー789</div>
+          <div><a href="#message" class="btn-secondary" title="メッセージ機能 (MVP)">会員権を提案</a></div>
         </div>
       </div>
     </div>
     <div class="tab-content official">
       <div class="membership-table">
         <div class="membership-row header">
-          <div>Club Name</div>
-          <div>Location</div>
-          <div>Type</div>
-          <div>Details</div>
+          <div>ゴルフ場名</div>
+          <div>エリア</div>
+          <div>種別</div>
+          <div>詳細</div>
           <div></div>
         </div>
         <div class="membership-row official">
-          <div>Royal Links Golf Course</div>
-          <div>Kyoto</div>
-          <div>Official</div>
-          <div>New Memberships Available</div>
-          <div><a href="#cta" class="btn-secondary" title="Purchase application (MVP)">Apply Now</a></div>
+          <div>ロイヤルリンクスゴルフコース</div>
+          <div>京都</div>
+          <div>公式</div>
+          <div>新規会員募集中</div>
+          <div><a href="#cta" class="btn-secondary" title="購入申込機能 (MVP)">申込</a></div>
         </div>
       </div>
     </div>
@@ -159,60 +158,68 @@
   <!-- Listing Registration Modal Placeholder (MVP) -->
   <div id="listing-form" class="modal" style="display:none;">
     <div class="modal-content">
-      <h2>List a Membership</h2>
-      <p>[Listing registration form with admin screening]</p>
-      <span class="modal-label">MVP: Listing Registration</span>
-      <button class="btn-secondary" onclick="closeModal('listing-form')">Close</button>
+      <h2>会員権を出品</h2>
+      <p>[管理者審査付きの会員権登録フォーム]</p>
+      <span class="modal-label">MVP: 会員権登録</span>
+      <button class="btn-secondary" onclick="closeModal('listing-form')">閉じる</button>
     </div>
   </div>
   <!-- Messaging Modal Placeholder (MVP) -->
   <div id="message" class="modal" style="display:none;">
     <div class="modal-content">
-      <h2>Message</h2>
-      <p>[Message function for negotiation/questions]</p>
-      <span class="modal-label">MVP: Messaging</span>
-      <button class="btn-secondary" onclick="closeModal('message')">Close</button>
+      <h2>メッセージ</h2>
+      <p>[価格交渉・質問用のメッセージ機能]</p>
+      <span class="modal-label">MVP: メッセージ</span>
+      <button class="btn-secondary" onclick="closeModal('message')">閉じる</button>
     </div>
   </div>
   <!-- Admin Approval/Notification Placeholder (MVP) -->
   <div id="admin" class="modal" style="display:none;">
     <div class="modal-content">
-      <h2>Admin Dashboard</h2>
-      <p>[Admin list/approval and notification functions]</p>
-      <span class="modal-label">MVP: Admin Approval/Notification</span>
-      <button class="btn-secondary" onclick="closeModal('admin')">Close</button>
+      <h2>管理者ダッシュボード</h2>
+      <p>[管理者によるリスト・承認・通知機能]</p>
+      <span class="modal-label">MVP: 管理者承認・通知</span>
+      <button class="btn-secondary" onclick="closeModal('admin')">閉じる</button>
     </div>
   </div>
   <section id="how-it-works" class="how-it-works">
-    <h2>How It Works</h2>
+    <h2>ご利用方法</h2>
     <div class="steps">
       <div class="step">
         <span class="step-number">1</span>
-        <h4>Browse Memberships</h4>
-        <p>Find the perfect golf club membership for you, or list your own for sale.</p>
+        <h4>会員権を探す・出品する</h4>
+        <p>ご希望のゴルフ会員権を検索したり、ご自身の会員権を出品できます。</p>
       </div>
       <div class="step">
         <span class="step-number">2</span>
-        <h4>Connect</h4>
-        <p>Contact sellers, buyers, or golf courses directly through our platform.</p>
+        <h4>連絡・交渉</h4>
+        <p>出品者・購入者・ゴルフ場と直接やり取りが可能です。</p>
       </div>
       <div class="step">
         <span class="step-number">3</span>
-        <h4>Complete the Deal</h4>
-        <p>Finalize your membership transfer or application securely and easily.</p>
+        <h4>取引完了</h4>
+        <p>会員権の名義変更や入会手続きを安全・簡単に進められます。</p>
       </div>
     </div>
   </section>
   <section id="cta" class="cta-section">
-    <h2>Ready to Get Started?</h2>
+    <h2>今すぐはじめましょう！</h2>
     <div class="cta-buttons">
-      <a href="#" class="btn-primary">Sell a Membership</a>
-      <a href="#" class="btn-primary">Buy a Membership</a>
-      <a href="#" class="btn-primary">List as Golf Course</a>
+      <a href="#" class="btn-primary">会員権を売る</a>
+      <a href="#" class="btn-primary">会員権を買う</a>
+      <a href="#" class="btn-primary">ゴルフ場として掲載</a>
     </div>
   </section>
+  <section class="coming-soon">
+    <h2>今後追加予定の機能</h2>
+    <ul>
+      <li>リアルタイムチャット（最初はシンプルなスレッド形式）</li>
+      <li>レビュー機能（購入後の評価など）</li>
+      <li>外部エスクロー会社とのAPI連携（当初は手動対応）</li>
+    </ul>
+  </section>
   <footer>
-    <p>&copy; 2024 GolfMarket. All rights reserved.</p>
+    <p>&copy; 2024 ゴルフマーケット. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
   <script>
